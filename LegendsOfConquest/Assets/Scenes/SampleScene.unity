@@ -424,6 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRigidbody: {fileID: 581637830}
+  moveSpeed: 5
   playerAnimator: {fileID: 581637833}
 --- !u!95 &581637833
 Animator:

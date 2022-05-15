@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] Rigidbody2D playerRigidbody;
+    [SerializeField] int moveSpeed = 1;
     [SerializeField] Animator playerAnimator;
 
     // Start is called before the first frame update
@@ -19,9 +20,15 @@ public class PlayerController : MonoBehaviour
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         float verticalMovement = Input.GetAxisRaw("Vertical");
 
-        playerRigidbody.velocity = new Vector2(horizontalMovement, verticalMovement);
+        playerRigidbody.velocity = new Vector2(horizontalMovement, verticalMovement) * moveSpeed;
 
         playerAnimator.SetFloat("movementX", playerRigidbody.velocity.x);
         playerAnimator.SetFloat("movementY", playerRigidbody.velocity.y);
+
+        if(horizontalMovement == 1 || horizontalMovement == -1 || verticalMovement == 1 || verticalMovement == -1)        
+        {            
+        playerAnimator.SetFloat("lastX", horizontalMovement);  
+        playerAnimator.SetFloat("lastY", verticalMovement);      
+        } 
     }
 }

@@ -6,11 +6,14 @@ using UnityEngine.SceneManagement;
 public class AreaExit : MonoBehaviour
 {
     [SerializeField] string sceneToLoad;
+    [SerializeField] string transitionAreaName;
+    [SerializeField] AreaEnter theAreaEnter;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            PlayerController.instance.transitionName = transitionAreaName;
             SceneManager.LoadScene(sceneToLoad);
         }
     }
@@ -18,7 +21,7 @@ public class AreaExit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        theAreaEnter.transitionAreaName = transitionAreaName;
     }
 
     // Update is called once per frame

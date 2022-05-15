@@ -348,7 +348,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 124879131
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -5183574429699489216, guid: d0ee234af11e106429b8a7af9f3488ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -426,6 +426,7 @@ MonoBehaviour:
   playerRigidbody: {fileID: 581637830}
   moveSpeed: 5
   playerAnimator: {fileID: 581637833}
+  transitionName: 
 --- !u!95 &581637833
 Animator:
   serializedVersion: 3
@@ -566,6 +567,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5177374571927058129, guid: 491aca5064fc42445bb6803c9624580f, type: 3}
+      propertyPath: transitionName
+      value: Mountains - 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177374571927058129, guid: 491aca5064fc42445bb6803c9624580f, type: 3}
+      propertyPath: transitionAreaName
+      value: Mountains - 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5177374571927058130, guid: 491aca5064fc42445bb6803c9624580f, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -580,7 +589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5177374571927058130, guid: 491aca5064fc42445bb6803c9624580f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5177374571927058130, guid: 491aca5064fc42445bb6803c9624580f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -613,6 +622,18 @@ PrefabInstance:
     - target: {fileID: 5177374571927058132, guid: 491aca5064fc42445bb6803c9624580f, type: 3}
       propertyPath: m_Name
       value: AreaExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259876761742299078, guid: 491aca5064fc42445bb6803c9624580f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5259876761742299078, guid: 491aca5064fc42445bb6803c9624580f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684472536388864356, guid: 491aca5064fc42445bb6803c9624580f, type: 3}
+      propertyPath: transitionAreaName
+      value: Mountains - 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 491aca5064fc42445bb6803c9624580f, type: 3}

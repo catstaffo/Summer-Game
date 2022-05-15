@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int moveSpeed = 1;
     [SerializeField] Animator playerAnimator;
 
+    public string transitionName;
+
     // Start is called before the first frame update
     void Start()
     {

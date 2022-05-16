@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator playerAnimator;
 
     public string transitionName;
+
+    private Vector3 bottomLeftEdge;
+    private Vector3 topRightEdge;
+
+    [SerializeField] Tilemap tilemap;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +30,9 @@ public class PlayerController : MonoBehaviour
             instance = this;
         }
         DontDestroyOnLoad(gameObject);
+
+        bottomLeftEdge = tilemap.localBounds.min + new Vector3(1f, 2f, 1f);
+        topRightEdge = tilemap.localBounds.max + new Vector3(-1f,-1f,-1f);
     }
 
     // Update is called once per frame
@@ -41,6 +50,12 @@ public class PlayerController : MonoBehaviour
         {            
         playerAnimator.SetFloat("lastX", horizontalMovement);  
         playerAnimator.SetFloat("lastY", verticalMovement);      
-        } 
+        }
+
+        transform.position = new Vector3(
+            Mathf.Clamp(transform.position.x,bottomLeftEdge.x,topRightEdge.x),
+            Mathf.Clamp(transform.position.y,bottomLeftEdge.y,topRightEdge.y),
+            Mathf.Clamp(transform.position.z,bottomLeftEdge.z,topRightEdge.z)
+        );
     }
 }

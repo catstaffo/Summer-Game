@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1265
     height: 573
-  m_MinSize: {x: 645, y: 492}
+  m_MinSize: {x: 680, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 0
-  controlID: 1613
+  controlID: 10831
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 1614
+  controlID: 10832
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 1572
+  controlID: 10833
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 62fbffff64fbffff5e440000
+      m_ExpandedIDs: 42fbffff62fbffff64fbffff5e440000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -307,9 +307,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.672694, y: -0.13535526, z: -11.373303}
+    m_Target: {x: -2.9412894, y: -0.3558422, z: -0.42092994}
     speed: 2
-    m_Value: {x: 6.672694, y: -0.13535526, z: -11.373303}
+    m_Value: {x: -2.9412894, y: -0.3558422, z: -0.42092994}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -360,9 +360,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.749131
+    m_Target: 5.3981605
     speed: 2
-    m_Value: 8.749131
+    m_Value: 5.3981605
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -452,22 +452,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tiny RPG Forest/Artwork/Environment
+    - Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Tiny RPG Forest/Artwork/Environment
+  - Assets/Tiny RPG Forest/Artwork/Environment/sliced-objects
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\catst\Desktop\Create with Code\Summer-Game\SummerProto
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 48.666656}
-    m_SelectedIDs: a84b0000
-    m_LastClickedID: 19368
-    m_ExpandedIDs: 000000009a4b00009c4b00009e4b0000a04b0000a24b0000a44b0000a64b0000a84b000000ca9a3b
+    scrollPos: {x: 0, y: 40.666656}
+    m_SelectedIDs: e84b0000
+    m_LastClickedID: 19432
+    m_ExpandedIDs: 0000000000460000024600000446000006460000084600000a4600000c4600000e46000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -495,7 +495,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009a4b00009c4b00009e4b0000a04b0000a24b0000a44b0000a64b0000a84b000000ca9a3b
+    m_ExpandedIDs: 0000000000460000024600000446000006460000084600000a4600000c4600000e46000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -520,10 +520,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 78440000
-    m_LastClickedInstanceID: 17528
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000cc5000003847000090490000
+    m_ExpandedInstanceIDs: c6230000cc5000003847000090490000d05800003e650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -586,7 +586,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GridPaintPaletteWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -595,14 +595,14 @@ MonoBehaviour:
     y: 0
     width: 362.3333
     height: 573
-  m_MinSize: {x: 242, y: 221}
+  m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -634,7 +634,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 17528
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:

@@ -14,8 +14,15 @@ public class AreaExit : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             PlayerController.instance.transitionName = transitionAreaName;
-            SceneManager.LoadScene(sceneToLoad);
+            MenuManager.instance.FadeImage();
+            StartCoroutine(LoadSceneCoroutine());
         }
+    }
+
+    IEnumerator LoadSceneCoroutine()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     // Start is called before the first frame update

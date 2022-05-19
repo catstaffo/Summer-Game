@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AreaEnter
     - AreaExit
     - CamController
+    - LevelManager
     - PlayerController
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
@@ -16,14 +17,13 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
@@ -67,6 +67,22 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1816}
     - Class: 114
       Script: {instanceID: 2004}
+    - Class: 114
+      Script: {instanceID: 2712}
+    - Class: 114
+      Script: {instanceID: 2782}
+    - Class: 114
+      Script: {instanceID: 2852}
+    - Class: 114
+      Script: {instanceID: 2880}
+    - Class: 114
+      Script: {instanceID: 3052}
+    - Class: 114
+      Script: {instanceID: 3536}
+    - Class: 114
+      Script: {instanceID: 3964}
+    - Class: 114
+      Script: {instanceID: 4172}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -98,6 +114,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 66
@@ -115,15 +133,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2712}
     - Class: 114
+      Script: {instanceID: 2782}
+    - Class: 114
       Script: {instanceID: 2852}
     - Class: 114
       Script: {instanceID: 2880}
     - Class: 114
       Script: {instanceID: 3052}
     - Class: 114
-      Script: {instanceID: 3962}
+      Script: {instanceID: 3536}
     - Class: 114
-      Script: {instanceID: 4170}
+      Script: {instanceID: 3964}
+    - Class: 114
+      Script: {instanceID: 4172}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -190,11 +212,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3052}
     - Class: 114
-      Script: {instanceID: 3762}
+      Script: {instanceID: 3536}
     - Class: 114
-      Script: {instanceID: 3962}
+      Script: {instanceID: 3764}
     - Class: 114
-      Script: {instanceID: 4170}
+      Script: {instanceID: 3964}
+    - Class: 114
+      Script: {instanceID: 4172}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -594,6 +618,12 @@ ScriptsOnlyBuild:
     className: CinemachineImpulseSource
   - hash:
       serializedVersion: 2
+      Hash: 7ce5cbad8473245bd2b49a5b80d11561
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelManager
+  - hash:
+      serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -636,7 +666,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 654929eb198370f7400fe0d5147c1122
+      Hash: 31b0b21fa5123dcaeaaefa56b269c2e1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController

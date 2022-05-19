@@ -466,7 +466,6 @@ MonoBehaviour:
   moveSpeed: 5
   playerAnimator: {fileID: 781057650}
   transitionName: 
-  tilemap: {fileID: 2136686036}
 --- !u!50 &781057654
 Rigidbody2D:
   serializedVersion: 4
@@ -808,6 +807,67 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6057212121422389592, guid: 7fba53ffb26a05048a60839204904319, type: 3}
   m_PrefabInstance: {fileID: 6057212119463058573}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &314150145548353850
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 314150145699768176, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 314150145699768176, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.8663262
+      objectReference: {fileID: 0}
+    - target: {fileID: 314150145699768176, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.8484216
+      objectReference: {fileID: 0}
+    - target: {fileID: 314150145699768176, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.220829
+      objectReference: {fileID: 0}
+    - target: {fileID: 314150145699768176, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 314150145699768176, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314150145699768176, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314150145699768176, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314150145699768176, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314150145699768176, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314150145699768176, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 314150145699768177, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: tilemap
+      value: 
+      objectReference: {fileID: 2136686036}
+    - target: {fileID: 314150145699768179, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
+      propertyPath: m_Name
+      value: LevelManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d0764ee9e4e5e4c9e3ee6da3e6aa43, type: 3}
 --- !u!1001 &603895297872187840
 PrefabInstance:
   m_ObjectHideFlags: 0

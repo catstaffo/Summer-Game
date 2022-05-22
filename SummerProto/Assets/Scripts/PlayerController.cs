@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 bottomLeftEdge;
     private Vector3 topRightEdge;
 
+    public bool deactivatedMovement = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +42,13 @@ public class PlayerController : MonoBehaviour
 
         playerRigidbody.velocity = new Vector2(horizontalMovement, verticalMovement) * moveSpeed;
 
+        if(deactivatedMovement)
+        {
+            playerRigidbody.velocity = Vector2.zero; // (0f, 0f) we use Vector2 to denote 0 on both axes
+        }
+
+        else {
+
         playerAnimator.SetFloat("movementX", playerRigidbody.velocity.x);
         playerAnimator.SetFloat("movementY", playerRigidbody.velocity.y);
 
@@ -54,6 +63,7 @@ public class PlayerController : MonoBehaviour
             Mathf.Clamp(transform.position.y,bottomLeftEdge.y,topRightEdge.y),
             Mathf.Clamp(transform.position.z,bottomLeftEdge.z,topRightEdge.z)
         );
+        }
     }
 
     public void SetLimit(Vector3 bottomEdgeToSet, Vector3 topEdgeToSet)

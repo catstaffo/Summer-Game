@@ -10686,6 +10686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
+  - '#WizardBinch'
   - Yo
   - I'm a wizard
 --- !u!61 &1172337576

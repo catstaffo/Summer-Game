@@ -10685,7 +10685,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74266b027d6b0d34d8a5d5b73c8d3ed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentences: []
+  sentences:
+  - Yo
+  - I'm a wizard
 --- !u!61 &1172337576
 BoxCollider2D:
   m_ObjectHideFlags: 0

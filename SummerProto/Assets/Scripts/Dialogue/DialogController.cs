@@ -14,6 +14,8 @@ public class DialogController : MonoBehaviour
     [SerializeField] string[] dialogueSentences;
     [SerializeField] int currentSentence;
 
+    private bool dialogueJustStarted;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +30,15 @@ public class DialogController : MonoBehaviour
         {
             if(Input.GetButtonUp("Fire1"))
             {
-                currentSentence++;
+
+                if(!dialogueJustStarted)
+                {
+                    currentSentence++;
                 // currentSentence = currentSentence + 1;
                 // same as currentSentence += 1;
+                
+
+                
 
                 if(currentSentence >= dialogueSentences.Length)
                 {
@@ -41,7 +49,12 @@ public class DialogController : MonoBehaviour
                 {
                     dialogueText.text = dialogueSentences[currentSentence];
                 }
+                }
 
+                else
+                {
+                    dialogueJustStarted = false;
+                }
                 
             }
 
@@ -55,5 +68,12 @@ public class DialogController : MonoBehaviour
         currentSentence = 0;
         dialogueText.text = dialogueSentences[currentSentence];
         dialogueBox.SetActive(true);
+
+        dialogueJustStarted = true;
+    }
+
+    public bool IsDialogueBoxActive()
+    {
+        return dialogueBox.activeInHierarchy;
     }
 }

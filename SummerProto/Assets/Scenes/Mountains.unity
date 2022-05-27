@@ -10689,6 +10689,8 @@ MonoBehaviour:
   - '#WizardBinch'
   - Yo
   - I'm a wizard
+  - '#Small Boy'
+  - This is a robbery
 --- !u!61 &1172337576
 BoxCollider2D:
   m_ObjectHideFlags: 0

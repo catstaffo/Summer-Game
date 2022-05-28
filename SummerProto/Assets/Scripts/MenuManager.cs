@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] Image imageToFade;
+    [SerializeField] GameObject menu;
 
 
     public static MenuManager instance;
@@ -22,8 +23,20 @@ public class MenuManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-    }
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            if(menu.activeInHierarchy)
+            {
+                menu.SetActive(false);
+                GameManager.instance.gameMenuOpened = false;
+            }
+            else
+            {
+                menu.SetActive(true);
+                GameManager.instance.gameMenuOpened = true;
+            }
+        }
+    }       
 }

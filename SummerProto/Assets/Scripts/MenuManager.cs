@@ -61,6 +61,10 @@ public class MenuManager : MonoBehaviour
            lvlText[i].text = "Level " + playerStats[i].playerLevel;
            xpText[i].text = "XP: " + playerStats[i].currentXP;
 
+        
+           xpSlider[i].maxValue = playerStats[i].xpForNextLevel[playerStats[i].playerLevel];
+           xpSlider[i].value = playerStats[i].currentXP;
+
        }
    }
 }

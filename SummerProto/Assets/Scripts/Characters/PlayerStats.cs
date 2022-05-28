@@ -11,7 +11,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] int maxLevel = 50;
     public int playerLevel = 1;
     public int currentXP;
-    [SerializeField] int[] xpForNextLevel;
+    public int[] xpForNextLevel;
     [SerializeField] int baseLevelXP = 100;
 
     public int maxHP = 100;

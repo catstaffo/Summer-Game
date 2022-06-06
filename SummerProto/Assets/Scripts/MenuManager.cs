@@ -18,6 +18,9 @@ public class MenuManager : MonoBehaviour
     [SerializeField] Image[] charImage;
     [SerializeField] GameObject[] charPanel;
 
+    [SerializeField] GameObject itemSlotContainer;
+    [SerializeField] Transform itemSlotContainerParent;
+
     public void FadeImage()
     {
         imageToFade.GetComponent<Animator>().SetTrigger("StartFade");
@@ -67,6 +70,25 @@ public class MenuManager : MonoBehaviour
 
        }
    }
+
+    public void UpdateItemsInventory()
+    {
+        foreach(Transform itemSlot in itemSlotContainerParent)
+        {
+            Destroy(itemSlot.gameObject);
+        }
+
+        // foreach loop
+        foreach(ItemsManager item in Inventory.instance.GetItemsList())
+        {
+            RectTransform itemSlot = Instantiate(itemSlotContainer, itemSlotContainerParent).GetComponent<RectTransform>();
+            Image itemImage  = itemSlot.Find("ItemImage").GetComponent<Image>();
+            // USE .FIND RARELY
+            // IF YOU CHANGE THE STRING NAME IN UnityEngine
+            // YOU WILL GET SO MANY ERRORS
+            itemImage.sprite = item.itemImage;
+        }
+    }
 
    public void QuitGame()
    {

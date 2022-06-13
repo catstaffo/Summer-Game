@@ -607,6 +607,82 @@ MonoBehaviour:
   dexterity: 10
   defense: 30
   luck: 0
+--- !u!114 &860662644 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8010761693132558634, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+  m_PrefabInstance: {fileID: 4087191499735869529}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6ddce42de05794da6026d40c98fe0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1118206803
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2221241985723486467, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486467, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486467, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486467, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486467, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486467, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486467, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486467, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486467, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486467, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486467, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486476, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: m_Name
+      value: potion (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486477, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486477, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: isStackable
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6025052ff88abf40b44b085362009ec, type: 3}
 --- !u!1 &1137871316
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +723,8 @@ MonoBehaviour:
   effectType: 0
   weaponDexterity: 5
   armorDefense: 0
+  isStackable: 0
+  amount: 1
 --- !u!212 &1137871318
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -883,6 +961,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1644446782 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1117654107, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+  m_PrefabInstance: {fileID: 4087191499735869529}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1713513309
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +1012,8 @@ MonoBehaviour:
   effectType: 0
   weaponDexterity: 0
   armorDefense: 5
+  isStackable: 0
+  amount: 1
 --- !u!212 &1713513311
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1004,6 +1095,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1846460725 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1839776301, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+  m_PrefabInstance: {fileID: 4087191499735869529}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1990023603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,6 +1450,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: potion
       objectReference: {fileID: 0}
+    - target: {fileID: 2221241985723486477, guid: f6025052ff88abf40b44b085362009ec, type: 3}
+      propertyPath: amount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6025052ff88abf40b44b085362009ec, type: 3}
 --- !u!1001 &4087191499735869529
@@ -1357,10 +1463,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4087191500234869392, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087191500234869392, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087191500234869392, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 860662644}
+    - target: {fileID: 4087191500234869392, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087191500234869392, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Press
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087191500234869392, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ItemButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087191500234869392, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4087191500759940135, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4087191500759940314, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+      propertyPath: itemName
+      value: 
+      objectReference: {fileID: 1644446782}
+    - target: {fileID: 4087191500759940314, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
+      propertyPath: itemDescription
+      value: 
+      objectReference: {fileID: 1846460725}
     - target: {fileID: 4087191500759940315, guid: b945c2571684c0f43910a8ad0f41621d, type: 3}
       propertyPath: m_Pivot.x
       value: 0

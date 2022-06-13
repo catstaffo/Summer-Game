@@ -105,6 +105,8 @@ MonoBehaviour:
   effectType: 0
   weaponDexterity: 5
   armorDefense: 0
+  isStackable: 1
+  amount: 0
 --- !u!58 &2221241985723486464
 CircleCollider2D:
   m_ObjectHideFlags: 0

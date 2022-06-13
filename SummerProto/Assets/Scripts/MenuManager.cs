@@ -21,6 +21,9 @@ public class MenuManager : MonoBehaviour
     [SerializeField] GameObject itemSlotContainer;
     [SerializeField] Transform itemSlotContainerParent;
 
+    public TextMeshProUGUI itemName, itemDescription;
+
+
     public void FadeImage()
     {
         imageToFade.GetComponent<Animator>().SetTrigger("StartFade");
@@ -87,6 +90,20 @@ public class MenuManager : MonoBehaviour
             // IF YOU CHANGE THE STRING NAME IN UnityEngine
             // YOU WILL GET SO MANY ERRORS
             itemImage.sprite = item.itemImage;
+            itemSlot.GetComponent<ItemButton>().itemOnButton = item;
+            
+
+            TextMeshProUGUI itemsAmountText = itemSlot.Find("Text (TMP)").GetComponent<TextMeshProUGUI>();
+            if(item.amount > 1)
+            {
+                itemsAmountText.text = item.amount.ToString();
+            }
+            else
+            {
+                itemsAmountText.text = "";
+            }
+
+            
         }
     }
 
